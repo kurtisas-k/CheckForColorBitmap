@@ -50,6 +50,7 @@ namespace CheckForColorBitmap
                     if (valPixelR - avgOfRGB > 5 || valPixelG - avgOfRGB > 5 || valPixelB - avgOfRGB > 5)
                     {
                         Console.WriteLine("{0} has a color", fi, Name);
+                        img.Dispose();
                         return true;
                     }
                 }
